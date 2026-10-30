@@ -1,2 +1,0 @@
-# CyberQuiz project
-project
