@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CyberQuiz</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+<a href="../Home page/home.html">HOME</a>
+<a href="../Dashboard page/Dashboard.html">Continue to Dashboard</a>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">⌘</span> Cyber<span>Quiz</span>
+        </a>
+
+        <a href="index.html" class="home-link">← Back to Home</a>
+    </header>
+
+    <main class="register-container">
+
+        <section class="register-info">
+            <div class="shield">🛡️</div>
+            <p class="tagline">LEARN. TEST. PROTECT.</p>
+
+            <h1>Become a Cyber<span>Defender</span></h1>
+
+            <p class="description">
+                Join CyberQuiz and test your knowledge of cyberattacks.
+                Challenge yourself, improve your skills, and climb the
+                leaderboard.
+            </p>
+
+            <div class="features">
+                <p>✓ Learn about real-world cyber threats</p>
+                <p>✓ Challenge yourself with multiple quiz levels</p>
+                <p>✓ Track your scores and improve your knowledge</p>
+            </div>
+        </section>
+
+        <section class="form-card">
+            <div class="form-heading">
+                <p class="small-title">CREATE YOUR ACCOUNT</p>
+                <h2>Register Now</h2>
+                <p>Fill in your details to get started.</p>
+            </div>
+
+            <form id="registerForm">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Choose a username"
+                        autocomplete="username"
+                        minlength="3"
+                        maxlength="20"
+                        pattern="[A-Za-z0-9_]+"
+                        title="Use letters, numbers, and underscores only."
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+                        <button type="button" class="toggle-password"
+                            data-target="password"
+                            aria-label="Show password">Show</button>
+                    </div>
+                    <small>Use at least 8 characters.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Enter password again"
+                            autocomplete="new-password"
+                            required
+                        >
+                        <button type="button" class="toggle-password"
+                            data-target="confirmPassword"
+                            aria-label="Show confirm password">Show</button>
+                    </div>
+                </div>
+
+                <label class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <span>I agree to the terms and conditions.</span>
+                </label>
+
+                <p id="message" class="message" role="status"
+                   aria-live="polite"></p>
+
+                <button type="submit" class="register-btn">
+                    Create Account →
+                </button>
+
+                <p class="login-text">
+                    Already have an account?
+                    <a href="login.html">Login here</a>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CyberQuiz | Learn Cybersecurity the Interactive Way</p>
+    </footer>
+
+    <script src="registration.js"></script>
+</body>
+</html>

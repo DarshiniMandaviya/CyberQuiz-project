@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | CyberQuiz</title>
+  <link rel="stylesheet" href="contact us.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="home.html" class="logo">
+      Cyber<span>Quiz</span> 🛡️
+    </a>
+
+    <nav id="navLinks">
+      <a href="home.html">Home</a>
+      <a href="../Registration%20page/registration.html">Registration</a>
+      <a href="../Dashboard%20page/Dashboard.html">Dashboard</a>
+      <a href="../Quiz%20page/Quiz.html">Quiz</a>
+      <a href="../Result%20page/Result.html">Display Result</a>
+      <a href="../Learderboard%20page/leaderboard.html">Leaderboard</a>
+      <a href="home.html#about">About Us</a>
+      <a href="home.html#feedback">Feedback</a>
+      <a href="contact us.html" class="active">Contact Us</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      type="button">☰</button>
+  </header>
+
+  <main>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <span class="tag">WE ARE HERE TO HELP</span>
+      <h1>Contact <span>Us</span></h1>
+      <p>
+        Have a question about CyberQuiz? Need help with a quiz,
+        or have a suggestion? Send us a message.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <span class="tag">GET IN TOUCH</span>
+          <h2>Let's Start a <span>Conversation</span></h2>
+
+          <p>
+            We welcome your questions, suggestions, and feedback.
+            Contact our team using the form, and we will be happy
+            to hear from you.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h3>Email Support</h3>
+              <p>Send us your questions or suggestions.</p>
+              <a href="mailto:YOUR_EMAIL@example.com">
+                YOUR_EMAIL@example.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🛡️</div>
+            <div>
+              <h3>Cybersecurity Learning</h3>
+              <p>
+                Learn about cyber threats and develop safer
+                online habits with CyberQuiz.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div>
+              <h3>Questions & Suggestions</h3>
+              <p>
+                Share your ideas to help us improve the learning
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h2>Send Us a Message</h2>
+          <p class="form-description">
+            Fill in the details below.
+          </p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input
+                type="text"
+                id="contactName"
+                name="name"
+                placeholder="Enter your full name"
+                maxlength="80"
+                autocomplete="name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="Quiz Help">Quiz Help</option>
+                <option value="Registration Issue">Registration Issue</option>
+                <option value="Technical Problem">Technical Problem</option>
+                <option value="Suggestion">Suggestion</option>
+                <option value="General Question">General Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Your Message</label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                rows="5"
+                maxlength="2000"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Send Message →
+            </button>
+
+            <p id="contactStatus" role="status"
+              aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="home.html" class="logo">
+      Cyber<span>Quiz</span> 🛡️
+    </a>
+
+    <p>Learn. Practice. Protect.</p>
+
+    <p class="copyright">
+      © 2026 CyberQuiz | Cyber Attack Project
+    </p>
+  </footer>
+
+  <script src="contact us.js"></script>
+</body>
+</html>

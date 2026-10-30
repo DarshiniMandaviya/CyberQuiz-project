@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberQuiz | Leaderboard</title>
+  <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+<a href="../Home page/home.html">HOME</a>
+<a href="../Dashboard page/Dashboard.html">DASHBOARD</a>
+<a href="../Quiz page/Quiz.html">Play Quiz</a>
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">⌘</span> Cyber<span>Quiz</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="quiz.html">Take Quiz</a>
+      <a href="leaderboard.html" class="active">Leaderboard</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="page-heading">
+      <span class="eyebrow">🏆 HALL OF FAME</span>
+      <h1>Leaderboard</h1>
+      <p>
+        Compete with other learners, earn points, and become a
+        Cyber Security Champion.
+      </p>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span class="stat-icon">👥</span>
+        <div>
+          <p>Total Participants</p>
+          <h2 id="totalPlayers">0</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">🎯</span>
+        <div>
+          <p>Highest Score</p>
+          <h2 id="highestScore">0</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">🛡️</span>
+        <div>
+          <p>Quiz Attempts</p>
+          <h2 id="totalAttempts">0</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="winners-section">
+      <h2 class="section-title">Top Champions</h2>
+
+      <div class="podium" id="podium">
+        <!-- Top three players are added using JavaScript -->
+      </div>
+    </section>
+
+    <section class="ranking-section">
+      <div class="ranking-heading">
+        <div>
+          <h2>All Participants</h2>
+          <p>Check your rank and track your progress.</p>
+        </div>
+        <span class="live-label">
+          <span class="live-dot"></span> Rankings
+        </span>
+      </div>
+
+      <div class="filters">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="🔍 Search participant..."
+          aria-label="Search participants"
+        >
+
+        <select id="levelFilter" aria-label="Filter by difficulty">
+          <option value="All">All Levels</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+
+        <select id="sortFilter" aria-label="Sort participants">
+          <option value="highest">Highest Score</option>
+          <option value="lowest">Lowest Score</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Participant</th>
+              <th>Level</th>
+              <th>Quizzes</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+
+          <tbody id="leaderboardBody">
+            <!-- Participant rows are added using JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <p id="emptyMessage" class="empty-message" hidden>
+        No participants found. Try another search or filter.
+      </p>
+    </section>
+
+    <p class="footer-note">
+      🔐 Learn. Practice. Protect. &nbsp; | &nbsp; CyberQuiz
+    </p>
+
+  </main>
+
+  <script src="leaderboard.js"></script>
+</body>
+</html>

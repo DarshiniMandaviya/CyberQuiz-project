@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CyberQuiz | Feedback</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="../Home%20page/home.html" class="logo">
+      Cyber<span>Quiz</span> 🛡️
+    </a>
+
+    <nav>
+      <a href="../Home%20page/home.html">Home</a>
+      <a href="../Registration%20page/registration.html">Registration</a>
+      <a href="../Dashboard%20page/Dashboard.html">Dashboard</a>
+      <a href="../Quiz%20page/Quiz.html">Quiz</a>
+      <a href="../Result%20page/Result.html">Display Result</a>
+      <a href="../Learderboard%20page/leaderboard.html">Leaderboard</a>
+      <a href="contact us.html">Contact Us</a>
+      <a href="feedback.html" class="active">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <span class="tag">🛡️ HELP US IMPROVE</span>
+
+      <h1>We Value Your <span>Feedback</span></h1>
+
+      <p>
+        Your feedback helps us make CyberQuiz better.
+        Tell us about your quiz experience, share your ideas,
+        and help us improve cybersecurity awareness.
+      </p>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback-section">
+
+      <div class="feedback-info">
+        <div class="shield">🛡️</div>
+
+        <h2>Your Voice <span>Matters</span></h2>
+
+        <p>
+          Help us create a better learning experience for
+          everyone interested in cybersecurity.
+        </p>
+
+        <div class="info-item">
+          <span>🎯</span>
+          <div>
+            <h3>Improve the Quiz</h3>
+            <p>Share your thoughts on our questions.</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span>💡</span>
+          <div>
+            <h3>Share Ideas</h3>
+            <p>Suggest features you would like to see.</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span>🔐</span>
+          <div>
+            <h3>Build Awareness</h3>
+            <p>Help others learn to stay safe online.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback-form">
+        <h2>Send Us Feedback</h2>
+        <p class="subtitle">Please complete the form below.</p>
+
+        <form id="feedbackForm">
+
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          >
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          >
+
+          <label for="rating">Rate Your Experience</label>
+          <select id="rating" name="rating" required>
+            <option value="">Select your rating</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Very Good</option>
+            <option value="3">⭐⭐⭐ Good</option>
+            <option value="2">⭐⭐ Fair</option>
+            <option value="1">⭐ Needs Improvement</option>
+          </select>
+
+          <label for="category">Feedback Category</label>
+          <select id="category" name="category" required>
+            <option value="">Choose a category</option>
+            <option value="Quiz Questions">Quiz Questions</option>
+            <option value="Website Design">Website Design</option>
+            <option value="Results and Scores">Results and Scores</option>
+            <option value="Technical Issue">Technical Issue</option>
+            <option value="Suggestions">Suggestions</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="message">Your Feedback</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell us what you liked or what we can improve..."
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-btn">
+            Submit Feedback →
+          </button>
+
+          <p id="feedbackMessage" role="status"></p>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <a href="../Home%20page/home.html" class="logo">
+      Cyber<span>Quiz</span> 🛡️
+    </a>
+
+    <p>Learn. Practice. Protect.</p>
+    <p>© 2026 CyberQuiz | Cyber Attack Awareness Project</p>
+  </footer>
+
+  <script src="feedback.js"></script>
+</body>
+</html>

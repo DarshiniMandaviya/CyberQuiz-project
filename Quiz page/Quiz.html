@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberQuiz | Cyber Attack Awareness</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+<a href="../Dashboard page/Dashboard.html">Back To Dashboard</a>
+<header class="navbar">
+    <a href="#" class="logo">🛡 Cyber<span>Quiz</span></a>
+    <nav>
+        <a href="#quiz">Take Quiz</a>
+        <a href="#leaderboard">Leaderboard</a>
+    </nav>
+    <span class="status">● SYSTEM SECURE</span>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <p class="eyebrow">CYBERSECURITY AWARENESS PLATFORM</p>
+        <h1>Test Your <span>Cyber Security</span><br>Knowledge</h1>
+        <p>Challenge yourself, learn about cyber attacks, and become a
+           smarter digital citizen.</p>
+    </section>
+
+    <section class="quiz-panel" id="quiz">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">YOUR CHALLENGE</p>
+                <h2>Cyber Attack Quiz</h2>
+            </div>
+            <div class="timer" id="timer">⏱ 20s</div>
+        </div>
+
+        <div class="settings">
+            <label>
+                Participant Name
+                <input type="text" id="playerName"
+                       placeholder="Enter your name" maxlength="30">
+            </label>
+
+            <label>
+                Difficulty
+                <select id="difficulty">
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </label>
+
+            <label>
+                Attack Type
+                <select id="category">
+                    <option value="All">All Attacks</option>
+                    <option value="XSS">Cross-Site Scripting (XSS)</option>
+                    <option value="DDoS">DDoS Attacks</option>
+                    <option value="Password">Password Attacks</option>
+                    <option value="Spoofing">Spoofing Attacks</option>
+                    <option value="Malware">Malware Attacks</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="progress-info">
+            <span id="questionCount">Question 0 of 0</span>
+            <span id="progressPercent">0%</span>
+        </div>
+
+        <div class="progress-track">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="quizContent">
+            <div class="welcome-icon">🔐</div>
+            <h3>Ready to test your knowledge?</h3>
+            <p>Choose your difficulty and attack category to begin.</p>
+            <button class="primary-btn" id="startBtn">Start Quiz →</button>
+        </div>
+
+        <div id="resultContent" class="hidden"></div>
+
+    </section>
+
+    <section class="leaderboard-panel" id="leaderboard">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">TOP PERFORMERS</p>
+                <h2>🏆 Leaderboard</h2>
+            </div>
+            <span class="small-note">Best scores saved on this browser</span>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Participant</th>
+                        <th>Difficulty</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                    <tr>
+                        <td colspan="4">No scores yet. Be the first!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 CyberQuiz | Learn • Practice • Stay Secure</p>
+    <p>Educational platform for cybersecurity awareness.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberQuiz | Cyber Attack Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#" class="logo">🛡 Cyber<span>Quiz</span></a>
+    <nav>
+        <a href="#quiz">Take Quiz</a>
+        <a href="#leaderboard">Leaderboard</a>
+    </nav>
+    <span class="status">● SYSTEM SECURE</span>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <p class="eyebrow">CYBERSECURITY AWARENESS PLATFORM</p>
+        <h1>Test Your <span>Cyber Security</span><br>Knowledge</h1>
+        <p>Challenge yourself, learn about cyber attacks, and become a
+           smarter digital citizen.</p>
+    </section>
+
+    <section class="quiz-panel" id="quiz">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">YOUR CHALLENGE</p>
+                <h2>Cyber Attack Quiz</h2>
+            </div>
+            <div class="timer" id="timer">⏱ 20s</div>
+        </div>
+
+        <div class="settings">
+            <label>
+                Participant Name
+                <input type="text" id="playerName"
+                       placeholder="Enter your name" maxlength="30">
+            </label>
+
+            <label>
+                Difficulty
+                <select id="difficulty">
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </label>
+
+            <label>
+                Attack Type
+                <select id="category">
+                    <option value="All">All Attacks</option>
+                    <option value="XSS">Cross-Site Scripting (XSS)</option>
+                    <option value="DDoS">DDoS Attacks</option>
+                    <option value="Password">Password Attacks</option>
+                    <option value="Spoofing">Spoofing Attacks</option>
+                    <option value="Malware">Malware Attacks</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="progress-info">
+            <span id="questionCount">Question 0 of 0</span>
+            <span id="progressPercent">0%</span>
+        </div>
+
+        <div class="progress-track">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="quizContent">
+            <div class="welcome-icon">🔐</div>
+            <h3>Ready to test your knowledge?</h3>
+            <p>Choose your difficulty and attack category to begin.</p>
+            <button class="primary-btn" id="startBtn">Start Quiz →</button>
+        </div>
+
+        <div id="resultContent" class="hidden"></div>
+
+    </section>
+
+    <section class="leaderboard-panel" id="leaderboard">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">TOP PERFORMERS</p>
+                <h2>🏆 Leaderboard</h2>
+            </div>
+            <span class="small-note">Best scores saved on this browser</span>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Participant</th>
+                        <th>Difficulty</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                    <tr>
+                        <td colspan="4">No scores yet. Be the first!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 CyberQuiz | Learn • Practice • Stay Secure</p>
+    <p>Educational platform for cybersecurity awareness.</p>
+</footer>
+
+<script src="Quiz.js"></script>
+</body>
+</html>

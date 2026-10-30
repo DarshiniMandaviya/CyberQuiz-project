@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CyberQuiz</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<a href="../Home page/home.html">HOME</a>    
+<a href="../Quiz page/Quiz.html">Start Quiz</a>
+<a href="../Learderboard page/leaderboard.html">LEADERBOARD</a>
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <a href="dashboard.html" class="logo">
+                ⌘ Cyber<span>Quiz</span>
+            </a>
+
+            <p class="menu-label">MAIN MENU</p>
+
+            <nav class="navigation">
+                <a href="dashboard.html" class="nav-link active">▦ Dashboard</a>
+                <a href="#categories" class="nav-link">⌕ Explore Quizzes</a>
+                <a href="leaderboard.html" class="nav-link">♛ Leaderboard</a>
+                <a href="#activity" class="nav-link">◷ Quiz History</a>
+                <a href="#profile" class="nav-link">♙ My Profile</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="security-card">
+                    <span class="security-icon">🛡️</span>
+                    <h3>Stay Cyber Safe!</h3>
+                    <p>Learn to recognize threats and protect your digital world.</p>
+                </div>
+
+                <a href="index.html" class="nav-link">⌂ Home Page</a>
+                <button id="logoutBtn" class="logout-btn">↪ Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <button id="menuBtn" class="menu-btn"
+                    aria-label="Toggle navigation">☰</button>
+
+                <div>
+                    <p class="breadcrumb">Pages / Dashboard</p>
+                    <h2>Dashboard</h2>
+                </div>
+
+                <div class="user-info">
+                    <div class="avatar" id="userAvatar">C</div>
+                    <div>
+                        <strong id="headerUsername">Cyber Learner</strong>
+                        <p>Quiz Participant</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Welcome section -->
+            <section class="welcome-banner">
+                <div class="welcome-text">
+                    <p class="eyebrow">YOUR CYBERSECURITY JOURNEY</p>
+                    <h1>Welcome back, <span id="welcomeName">Cyber Learner</span>!</h1>
+                    <p>
+                        Ready to test your knowledge? Choose a challenge,
+                        learn about cyber threats, and improve your score.
+                    </p>
+                    <a href="#categories" class="primary-btn">Start Learning →</a>
+                </div>
+
+                <div class="welcome-art" aria-hidden="true">🛡️</div>
+            </section>
+
+            <!-- Statistics -->
+            <section class="stats-grid">
+                <article class="stat-card">
+                    <div class="stat-icon purple">▤</div>
+                    <p>Quizzes Completed</p>
+                    <h2 id="completedCount">0</h2>
+                    <span>Total attempts</span>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon green">％</div>
+                    <p>Average Score</p>
+                    <h2 id="averageScore">0%</h2>
+                    <span>Across all attempts</span>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon orange">♛</div>
+                    <p>Best Score</p>
+                    <h2 id="bestScore">0%</h2>
+                    <span>Your personal best</span>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon blue">⚡</div>
+                    <p>Learning Level</p>
+                    <h2 id="learningLevel">Beginner</h2>
+                    <span>Based on your average</span>
+                </article>
+            </section>
+
+            <!-- Quiz categories -->
+            <section class="section" id="categories">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">LEARN AND PRACTICE</p>
+                        <h2>Explore Cyberattacks</h2>
+                    </div>
+                    <span class="section-note">5 Categories</span>
+                </div>
+
+                <div class="category-grid">
+                    <article class="category-card">
+                        <div class="category-icon pink">⌨</div>
+                        <h3>Cross-Site Scripting</h3>
+                        <p>Understand XSS vulnerabilities and malicious scripts.</p>
+                        <button class="quiz-btn" data-category="XSS">
+                            Take Quiz →
+                        </button>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon blue">⇄</div>
+                        <h3>DDoS Attacks</h3>
+                        <p>Learn how distributed attacks disrupt online services.</p>
+                        <button class="quiz-btn" data-category="DDoS">
+                            Take Quiz →
+                        </button>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon orange">🔑</div>
+                        <h3>Password Attacks</h3>
+                        <p>Discover password risks and account protection methods.</p>
+                        <button class="quiz-btn" data-category="Password">
+                            Take Quiz →
+                        </button>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon purple">🎭</div>
+                        <h3>Spoofing Attacks</h3>
+                        <p>Identify impersonation and forged digital identities.</p>
+                        <button class="quiz-btn" data-category="Spoofing">
+                            Take Quiz →
+                        </button>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon green">☣</div>
+                        <h3>Malware Attacks</h3>
+                        <p>Explore viruses, ransomware, spyware, and trojans.</p>
+                        <button class="quiz-btn" data-category="Malware">
+                            Take Quiz →
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Difficulty selection -->
+            <section class="section difficulty-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">CHOOSE YOUR CHALLENGE</p>
+                        <h2>Select Difficulty</h2>
+                    </div>
+                </div>
+
+                <div class="difficulty-grid">
+                    <button class="difficulty-card beginner selected"
+                        data-level="Beginner">
+                        <span>🌱</span>
+                        <h3>Beginner</h3>
+                        <p>Learn the basics of cyberattacks.</p>
+                        <small>Easy questions</small>
+                    </button>
+
+                    <button class="difficulty-card intermediate"
+                        data-level="Intermediate">
+                        <span>⚡</span>
+                        <h3>Intermediate</h3>
+                        <p>Test your growing knowledge.</p>
+                        <small>Moderate questions</small>
+                    </button>
+
+                    <button class="difficulty-card advanced"
+                        data-level="Advanced">
+                        <span>🔥</span>
+                        <h3>Advanced</h3>
+                        <p>Challenge your cybersecurity skills.</p>
+                        <small>Expert questions</small>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Recent activity -->
+            <section class="section activity-section" id="activity">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">TRACK YOUR PROGRESS</p>
+                        <h2>Recent Quiz Activity</h2>
+                    </div>
+                    <a href="leaderboard.html" class="text-link">
+                        View Leaderboard →
+                    </a>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Quiz Category</th>
+                                <th>Difficulty</th>
+                                <th>Score</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="activityTable">
+                            <tr>
+                                <td colspan="5" class="empty-state">
+                                    No quiz attempts yet. Start your first quiz!
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Profile -->
+            <section class="section profile-section" id="profile">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">ACCOUNT INFORMATION</p>
+                        <h2>My Profile</h2>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="avatar large" id="profileAvatar">C</div>
+                    <div class="profile-details">
+                        <h3 id="profileName">Cyber Learner</h3>
+                        <p id="profileEmail">No email available</p>
+                        <p id="profileUsername">@learner</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                © 2026 CyberQuiz | Learn. Test. Protect.
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

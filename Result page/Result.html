@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberQuiz - Quiz Results</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+<a href="../Dashboard page/Dashboard.html">DASHBOARD</a>
+<a href="../Quiz page/Quiz.html">Try Again</a>
+<a href="../Learderboard page/leaderboard.html">View Leaderboard</a>
+    <header class="navbar">
+        <div class="logo">🛡️ CyberQuiz</div>
+        <a href="index.html" class="home-link">Home</a>
+    </header>
+
+    <main class="result-container">
+
+        <div class="result-icon">🏆</div>
+        <p class="subtitle">QUIZ COMPLETED</p>
+
+        <h1>Congratulations, <span id="playerName">Participant</span>!</h1>
+        <p class="message" id="performanceMessage">
+            Your quiz has been completed successfully.
+        </p>
+
+        <section class="score-card">
+            <p>Your Final Score</p>
+            <h2><span id="score">0</span> Points</h2>
+
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <h3><span id="percentage">0</span>% Accuracy</h3>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card correct-card">
+                <span class="stat-icon">✓</span>
+                <h2 id="correctAnswers">0</h2>
+                <p>Correct Answers</p>
+            </div>
+
+            <div class="stat-card incorrect-card">
+                <span class="stat-icon">✕</span>
+                <h2 id="incorrectAnswers">0</h2>
+                <p>Incorrect / Timed Out</p>
+            </div>
+
+            <div class="stat-card level-card">
+                <span class="stat-icon">🎯</span>
+                <h2 id="quizLevel">Beginner</h2>
+                <p>Difficulty Level</p>
+            </div>
+
+        </section>
+
+        <div class="result-actions">
+            <button id="reviewBtn" class="secondary-btn">
+                Review Answers
+            </button>
+
+            <button id="leaderboardBtn" class="primary-btn">
+                🏆 View Leaderboard
+            </button>
+
+            <button id="retryBtn" class="secondary-btn">
+                ↻ Try Again
+            </button>
+        </div>
+
+        <section id="reviewSection" class="review-section hidden">
+            <h2>Answer Review</h2>
+            <div id="answerReview"></div>
+        </section>
+
+        <p class="footer-text">
+            Keep learning. Stay alert. Stay cyber safe! 🔐
+        </p>
+
+    </main>
+
+    <script src="result.js"></script>
+</body>
+</html>
